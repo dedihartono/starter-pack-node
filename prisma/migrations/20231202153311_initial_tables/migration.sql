@@ -17,6 +17,7 @@ CREATE TABLE `Post` (
     `updatedAt` DATETIME(3) NOT NULL,
     `published` BOOLEAN NOT NULL DEFAULT false,
     `title` VARCHAR(255) NOT NULL,
+    `content` TEXT NOT NULL,
     `authorId` INTEGER NULL,
 
     PRIMARY KEY (`id`)

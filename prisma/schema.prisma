@@ -25,11 +25,19 @@ model Post {
   updatedAt DateTime @updatedAt
   published Boolean  @default(false)
   title     String   @db.VarChar(255)
+  content   String   @db.Text
   author    User?    @relation(fields: [authorId], references: [id])
   authorId  Int?
+  categories Category[]
 }
 
 enum Role {
   USER
   ADMIN
+}
+
+model Category {
+  id    Int    @id @default(autoincrement())
+  name  String
+  posts Post[]
 }
