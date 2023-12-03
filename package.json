@@ -1,5 +1,5 @@
 {
-  "name": "hello-prisma",
+  "name": "startter-pack-node",
   "version": "1.0.0",
   "description": "",
   "main": "app.ts",
@@ -9,8 +9,8 @@
     "build": "tsc",
     "dev": "npm run build && npm run start:dev"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["prisma", "ORM", "CRUD", "typescript"],
+  "author": "Dedi Hartono",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.10.2",
